@@ -16,9 +16,9 @@ const prepareAndStartServer = () => {
   app.listen(PORT, () => {
     console.log(`Server started on Port : ${PORT}`);
 
-    if (process.env.DB_SYNC) {
-      db.sequelize.sync({ alter: true });
-    }
+    // if (process.env.DB_SYNC) {
+    //   db.sequelize.sync({ alter: true });
+    // }
 
     // const service = new UserService();
     // const newToken = service.createToken({
